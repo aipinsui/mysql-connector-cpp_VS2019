@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\mysql-connector-cpp_VS2019\cdk\foundation\error.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql-connector-cpp_VS2019\cdk\foundation\stream.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql-connector-cpp_VS2019\cdk\foundation\connection_tcpip.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql-connector-cpp_VS2019\cdk\foundation\socket.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql-connector-cpp_VS2019\cdk\foundation\diagnostics.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql-connector-cpp_VS2019\cdk\foundation\socket_detail.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\mysql-connector-cpp_VS2019\cdk\foundation\connection_openssl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\mysql-connector-cpp_VS2019\cdk\foundation\connection_tcpip_base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql-connector-cpp_VS2019\cdk\foundation\socket_detail.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\mysql-connector-cpp_VS2019\cdk\foundation\tls_ciphers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql-connector-cpp_VS2019\cdk\foundation\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{D8D6D68E-5200-3EB2-A65C-8EA83D8A82AA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9CEE33EF-D1FC-340B-9F63-CFFD5320624F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

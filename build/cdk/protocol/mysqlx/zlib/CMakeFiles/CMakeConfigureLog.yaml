@@ -1,0 +1,619 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:35 (project)"
+    message: |
+      The system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:35 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.11.2+f32259642
+      版权所有(C) Microsoft Corporation。保留所有权利。
+      
+      生成启动时间为 2024/8/15 18:29:07。
+      节点 1 上的项目“E:\\mysql-connector-cpp_VS2019\\build\\platform-cache\\CMakeFiles\\3.30.2\\CompilerIdC\\CompilerIdC.vcxproj”(默认目标)。
+      PrepareForBuild:
+        正在创建目录“Debug\\”。
+        正在创建目录“Debug\\CompilerIdC.tlog\\”。
+      InitializeBuildStatus:
+        正在创建“Debug\\CompilerIdC.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+      ClCompile:
+        d:\\Microsoft Visual Studio 16.0\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc142.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        d:\\Microsoft Visual Studio 16.0\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> E:\\mysql-connector-cpp_VS2019\\build\\platform-cache\\CMakeFiles\\3.30.2\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=d:\\Microsoft Visual Studio 16.0\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        正在删除文件“Debug\\CompilerIdC.tlog\\unsuccessfulbuild”。
+        正在对“Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate”执行 Touch 任务。
+      已完成生成项目“E:\\mysql-connector-cpp_VS2019\\build\\platform-cache\\CMakeFiles\\3.30.2\\CompilerIdC\\CompilerIdC.vcxproj”(默认目标)的操作。
+      
+      已成功生成。
+          0 个警告
+          0 个错误
+      
+      已用时间 00:00:00.85
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        E:/mysql-connector-cpp_VS2019/build/platform-cache/CMakeFiles/3.30.2/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:35 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.11.2+f32259642
+      版权所有(C) Microsoft Corporation。保留所有权利。
+      
+      生成启动时间为 2024/8/15 18:29:08。
+      节点 1 上的项目“E:\\mysql-connector-cpp_VS2019\\build\\platform-cache\\CMakeFiles\\3.30.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj”(默认目标)。
+      PrepareForBuild:
+        正在创建目录“Debug\\”。
+        正在创建目录“Debug\\CompilerIdCXX.tlog\\”。
+      InitializeBuildStatus:
+        正在创建“Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+      ClCompile:
+        d:\\Microsoft Visual Studio 16.0\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc142.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        d:\\Microsoft Visual Studio 16.0\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> E:\\mysql-connector-cpp_VS2019\\build\\platform-cache\\CMakeFiles\\3.30.2\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=d:\\Microsoft Visual Studio 16.0\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        正在删除文件“Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild”。
+        正在对“Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate”执行 Touch 任务。
+      已完成生成项目“E:\\mysql-connector-cpp_VS2019\\build\\platform-cache\\CMakeFiles\\3.30.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj”(默认目标)的操作。
+      
+      已成功生成。
+          0 个警告
+          0 个错误
+      
+      已用时间 00:00:00.72
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        E:/mysql-connector-cpp_VS2019/build/platform-cache/CMakeFiles/3.30.2/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:35 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "E:/mysql-connector-cpp_VS2019/build/platform-cache/CMakeFiles/CMakeScratch/TryCompile-a4utrc"
+      binary: "E:/mysql-connector-cpp_VS2019/build/platform-cache/CMakeFiles/CMakeScratch/TryCompile-a4utrc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/mysql-connector-cpp_VS2019/build/platform-cache/CMakeFiles/CMakeScratch/TryCompile-a4utrc'
+        
+        Run Build Command(s): "d:/Microsoft Visual Studio 16.0/MSBuild/Current/Bin/MSBuild.exe" cmTC_6a5bf.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.11.2+f32259642
+        版权所有(C) Microsoft Corporation。保留所有权利。
+        
+        生成启动时间为 2024/8/15 18:29:09。
+        节点 1 上的项目“E:\\mysql-connector-cpp_VS2019\\build\\platform-cache\\CMakeFiles\\CMakeScratch\\TryCompile-a4utrc\\cmTC_6a5bf.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_6a5bf.dir\\Debug\\”。
+          正在创建目录“E:\\mysql-connector-cpp_VS2019\\build\\platform-cache\\CMakeFiles\\CMakeScratch\\TryCompile-a4utrc\\Debug\\”。
+          正在创建目录“cmTC_6a5bf.dir\\Debug\\cmTC_6a5bf.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_6a5bf.dir\\Debug\\cmTC_6a5bf.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+        ClCompile:
+          d:\\Microsoft Visual Studio 16.0\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6a5bf.dir\\Debug\\\\" /Fd"cmTC_6a5bf.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.29.30154 版
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          CMakeCCompilerABI.c
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6a5bf.dir\\Debug\\\\" /Fd"cmTC_6a5bf.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+        Link:
+          d:\\Microsoft Visual Studio 16.0\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\mysql-connector-cpp_VS2019\\build\\platform-cache\\CMakeFiles\\CMakeScratch\\TryCompile-a4utrc\\Debug\\cmTC_6a5bf.exe" /INCREMENTAL /ILK:"cmTC_6a5bf.dir\\Debug\\cmTC_6a5bf.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/mysql-connector-cpp_VS2019/build/platform-cache/CMakeFiles/CMakeScratch/TryCompile-a4utrc/Debug/cmTC_6a5bf.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/mysql-connector-cpp_VS2019/build/platform-cache/CMakeFiles/CMakeScratch/TryCompile-a4utrc/Debug/cmTC_6a5bf.lib" /MACHINE:X64  /machine:x64 cmTC_6a5bf.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_6a5bf.vcxproj -> E:\\mysql-connector-cpp_VS2019\\build\\platform-cache\\CMakeFiles\\CMakeScratch\\TryCompile-a4utrc\\Debug\\cmTC_6a5bf.exe
+        FinalizeBuildStatus:
+          正在删除文件“cmTC_6a5bf.dir\\Debug\\cmTC_6a5bf.tlog\\unsuccessfulbuild”。
+          正在对“cmTC_6a5bf.dir\\Debug\\cmTC_6a5bf.tlog\\cmTC_6a5bf.lastbuildstate”执行 Touch 任务。
+        已完成生成项目“E:\\mysql-connector-cpp_VS2019\\build\\platform-cache\\CMakeFiles\\CMakeScratch\\TryCompile-a4utrc\\cmTC_6a5bf.vcxproj”(默认目标)的操作。
+        
+        已成功生成。
+            0 个警告
+            0 个错误
+        
+        已用时间 00:00:00.53
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:35 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': d:/Microsoft Visual Studio 16.0/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:35 (project)"
+    message: |
+      Running the C compiler's linker: "d:/Microsoft Visual Studio 16.0/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.29.30154.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:35 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "E:/mysql-connector-cpp_VS2019/build/platform-cache/CMakeFiles/CMakeScratch/TryCompile-74bsmf"
+      binary: "E:/mysql-connector-cpp_VS2019/build/platform-cache/CMakeFiles/CMakeScratch/TryCompile-74bsmf"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/mysql-connector-cpp_VS2019/build/platform-cache/CMakeFiles/CMakeScratch/TryCompile-74bsmf'
+        
+        Run Build Command(s): "d:/Microsoft Visual Studio 16.0/MSBuild/Current/Bin/MSBuild.exe" cmTC_d201b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.11.2+f32259642
+        版权所有(C) Microsoft Corporation。保留所有权利。
+        
+        生成启动时间为 2024/8/15 18:29:10。
+        节点 1 上的项目“E:\\mysql-connector-cpp_VS2019\\build\\platform-cache\\CMakeFiles\\CMakeScratch\\TryCompile-74bsmf\\cmTC_d201b.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_d201b.dir\\Debug\\”。
+          正在创建目录“E:\\mysql-connector-cpp_VS2019\\build\\platform-cache\\CMakeFiles\\CMakeScratch\\TryCompile-74bsmf\\Debug\\”。
+          正在创建目录“cmTC_d201b.dir\\Debug\\cmTC_d201b.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_d201b.dir\\Debug\\cmTC_d201b.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+        ClCompile:
+          d:\\Microsoft Visual Studio 16.0\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_d201b.dir\\Debug\\\\" /Fd"cmTC_d201b.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.29.30154 版
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          CMakeCXXCompilerABI.cpp
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_d201b.dir\\Debug\\\\" /Fd"cmTC_d201b.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+        Link:
+          d:\\Microsoft Visual Studio 16.0\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\mysql-connector-cpp_VS2019\\build\\platform-cache\\CMakeFiles\\CMakeScratch\\TryCompile-74bsmf\\Debug\\cmTC_d201b.exe" /INCREMENTAL /ILK:"cmTC_d201b.dir\\Debug\\cmTC_d201b.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/mysql-connector-cpp_VS2019/build/platform-cache/CMakeFiles/CMakeScratch/TryCompile-74bsmf/Debug/cmTC_d201b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/mysql-connector-cpp_VS2019/build/platform-cache/CMakeFiles/CMakeScratch/TryCompile-74bsmf/Debug/cmTC_d201b.lib" /MACHINE:X64  /machine:x64 cmTC_d201b.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_d201b.vcxproj -> E:\\mysql-connector-cpp_VS2019\\build\\platform-cache\\CMakeFiles\\CMakeScratch\\TryCompile-74bsmf\\Debug\\cmTC_d201b.exe
+        FinalizeBuildStatus:
+          正在删除文件“cmTC_d201b.dir\\Debug\\cmTC_d201b.tlog\\unsuccessfulbuild”。
+          正在对“cmTC_d201b.dir\\Debug\\cmTC_d201b.tlog\\cmTC_d201b.lastbuildstate”执行 Touch 任务。
+        已完成生成项目“E:\\mysql-connector-cpp_VS2019\\build\\platform-cache\\CMakeFiles\\CMakeScratch\\TryCompile-74bsmf\\cmTC_d201b.vcxproj”(默认目标)的操作。
+        
+        已成功生成。
+            0 个警告
+            0 个错误
+        
+        已用时间 00:00:00.53
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:35 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': d:/Microsoft Visual Studio 16.0/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:35 (project)"
+    message: |
+      Running the CXX compiler's linker: "d:/Microsoft Visual Studio 16.0/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.29.30154.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:50 (check_include_file)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "E:/mysql-connector-cpp_VS2019/build/cdk/protocol/mysqlx/zlib/CMakeFiles/CMakeScratch/TryCompile-d8n6fm"
+      binary: "E:/mysql-connector-cpp_VS2019/build/cdk/protocol/mysqlx/zlib/CMakeFiles/CMakeScratch/TryCompile-d8n6fm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_MODULE_PATH: "E:/mysql-connector-cpp_VS2019/cdk/cmake"
+      CMAKE_WARN_DEPRECATED: "FALSE"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/mysql-connector-cpp_VS2019/build/cdk/protocol/mysqlx/zlib/CMakeFiles/CMakeScratch/TryCompile-d8n6fm'
+        
+        Run Build Command(s): "d:/Microsoft Visual Studio 16.0/MSBuild/Current/Bin/MSBuild.exe" cmTC_1c2b9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.11.2+f32259642
+        版权所有(C) Microsoft Corporation。保留所有权利。
+        
+        生成启动时间为 2024/8/15 18:29:13。
+        节点 1 上的项目“E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-d8n6fm\\cmTC_1c2b9.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_1c2b9.dir\\Debug\\”。
+          正在创建目录“E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-d8n6fm\\Debug\\”。
+          正在创建目录“cmTC_1c2b9.dir\\Debug\\cmTC_1c2b9.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_1c2b9.dir\\Debug\\cmTC_1c2b9.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+        ClCompile:
+          d:\\Microsoft Visual Studio 16.0\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1c2b9.dir\\Debug\\\\" /Fd"cmTC_1c2b9.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-d8n6fm\\CheckIncludeFile.c"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.29.30154 版
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          CheckIncludeFile.c
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1c2b9.dir\\Debug\\\\" /Fd"cmTC_1c2b9.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-d8n6fm\\CheckIncludeFile.c"
+        Link:
+          d:\\Microsoft Visual Studio 16.0\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-d8n6fm\\Debug\\cmTC_1c2b9.exe" /INCREMENTAL /ILK:"cmTC_1c2b9.dir\\Debug\\cmTC_1c2b9.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/mysql-connector-cpp_VS2019/build/cdk/protocol/mysqlx/zlib/CMakeFiles/CMakeScratch/TryCompile-d8n6fm/Debug/cmTC_1c2b9.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/mysql-connector-cpp_VS2019/build/cdk/protocol/mysqlx/zlib/CMakeFiles/CMakeScratch/TryCompile-d8n6fm/Debug/cmTC_1c2b9.lib" /MACHINE:X64  /machine:x64 cmTC_1c2b9.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_1c2b9.vcxproj -> E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-d8n6fm\\Debug\\cmTC_1c2b9.exe
+        FinalizeBuildStatus:
+          正在删除文件“cmTC_1c2b9.dir\\Debug\\cmTC_1c2b9.tlog\\unsuccessfulbuild”。
+          正在对“cmTC_1c2b9.dir\\Debug\\cmTC_1c2b9.tlog\\cmTC_1c2b9.lastbuildstate”执行 Touch 任务。
+        已完成生成项目“E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-d8n6fm\\cmTC_1c2b9.vcxproj”(默认目标)的操作。
+        
+        已成功生成。
+            0 个警告
+            0 个错误
+        
+        已用时间 00:00:00.53
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:51 (check_include_file)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "E:/mysql-connector-cpp_VS2019/build/cdk/protocol/mysqlx/zlib/CMakeFiles/CMakeScratch/TryCompile-8w13dt"
+      binary: "E:/mysql-connector-cpp_VS2019/build/cdk/protocol/mysqlx/zlib/CMakeFiles/CMakeScratch/TryCompile-8w13dt"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_MODULE_PATH: "E:/mysql-connector-cpp_VS2019/cdk/cmake"
+      CMAKE_WARN_DEPRECATED: "FALSE"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/mysql-connector-cpp_VS2019/build/cdk/protocol/mysqlx/zlib/CMakeFiles/CMakeScratch/TryCompile-8w13dt'
+        
+        Run Build Command(s): "d:/Microsoft Visual Studio 16.0/MSBuild/Current/Bin/MSBuild.exe" cmTC_fe0f1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.11.2+f32259642
+        版权所有(C) Microsoft Corporation。保留所有权利。
+        
+        生成启动时间为 2024/8/15 18:29:14。
+        节点 1 上的项目“E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-8w13dt\\cmTC_fe0f1.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_fe0f1.dir\\Debug\\”。
+          正在创建目录“E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-8w13dt\\Debug\\”。
+          正在创建目录“cmTC_fe0f1.dir\\Debug\\cmTC_fe0f1.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_fe0f1.dir\\Debug\\cmTC_fe0f1.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+        ClCompile:
+          d:\\Microsoft Visual Studio 16.0\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_fe0f1.dir\\Debug\\\\" /Fd"cmTC_fe0f1.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-8w13dt\\CheckIncludeFile.c"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.29.30154 版
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          CheckIncludeFile.c
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_fe0f1.dir\\Debug\\\\" /Fd"cmTC_fe0f1.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-8w13dt\\CheckIncludeFile.c"
+        Link:
+          d:\\Microsoft Visual Studio 16.0\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-8w13dt\\Debug\\cmTC_fe0f1.exe" /INCREMENTAL /ILK:"cmTC_fe0f1.dir\\Debug\\cmTC_fe0f1.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/mysql-connector-cpp_VS2019/build/cdk/protocol/mysqlx/zlib/CMakeFiles/CMakeScratch/TryCompile-8w13dt/Debug/cmTC_fe0f1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/mysql-connector-cpp_VS2019/build/cdk/protocol/mysqlx/zlib/CMakeFiles/CMakeScratch/TryCompile-8w13dt/Debug/cmTC_fe0f1.lib" /MACHINE:X64  /machine:x64 cmTC_fe0f1.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_fe0f1.vcxproj -> E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-8w13dt\\Debug\\cmTC_fe0f1.exe
+        FinalizeBuildStatus:
+          正在删除文件“cmTC_fe0f1.dir\\Debug\\cmTC_fe0f1.tlog\\unsuccessfulbuild”。
+          正在对“cmTC_fe0f1.dir\\Debug\\cmTC_fe0f1.tlog\\cmTC_fe0f1.lastbuildstate”执行 Touch 任务。
+        已完成生成项目“E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-8w13dt\\cmTC_fe0f1.vcxproj”(默认目标)的操作。
+        
+        已成功生成。
+            0 个警告
+            0 个错误
+        
+        已用时间 00:00:00.53
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:52 (check_include_file)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "E:/mysql-connector-cpp_VS2019/build/cdk/protocol/mysqlx/zlib/CMakeFiles/CMakeScratch/TryCompile-872nmo"
+      binary: "E:/mysql-connector-cpp_VS2019/build/cdk/protocol/mysqlx/zlib/CMakeFiles/CMakeScratch/TryCompile-872nmo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_MODULE_PATH: "E:/mysql-connector-cpp_VS2019/cdk/cmake"
+      CMAKE_WARN_DEPRECATED: "FALSE"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/mysql-connector-cpp_VS2019/build/cdk/protocol/mysqlx/zlib/CMakeFiles/CMakeScratch/TryCompile-872nmo'
+        
+        Run Build Command(s): "d:/Microsoft Visual Studio 16.0/MSBuild/Current/Bin/MSBuild.exe" cmTC_8fc30.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.11.2+f32259642
+        版权所有(C) Microsoft Corporation。保留所有权利。
+        
+        生成启动时间为 2024/8/15 18:29:15。
+        节点 1 上的项目“E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-872nmo\\cmTC_8fc30.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_8fc30.dir\\Debug\\”。
+          正在创建目录“E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-872nmo\\Debug\\”。
+          正在创建目录“cmTC_8fc30.dir\\Debug\\cmTC_8fc30.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_8fc30.dir\\Debug\\cmTC_8fc30.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+        ClCompile:
+          d:\\Microsoft Visual Studio 16.0\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8fc30.dir\\Debug\\\\" /Fd"cmTC_8fc30.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-872nmo\\CheckIncludeFile.c"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.29.30154 版
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          CheckIncludeFile.c
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8fc30.dir\\Debug\\\\" /Fd"cmTC_8fc30.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-872nmo\\CheckIncludeFile.c"
+        Link:
+          d:\\Microsoft Visual Studio 16.0\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-872nmo\\Debug\\cmTC_8fc30.exe" /INCREMENTAL /ILK:"cmTC_8fc30.dir\\Debug\\cmTC_8fc30.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/mysql-connector-cpp_VS2019/build/cdk/protocol/mysqlx/zlib/CMakeFiles/CMakeScratch/TryCompile-872nmo/Debug/cmTC_8fc30.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/mysql-connector-cpp_VS2019/build/cdk/protocol/mysqlx/zlib/CMakeFiles/CMakeScratch/TryCompile-872nmo/Debug/cmTC_8fc30.lib" /MACHINE:X64  /machine:x64 cmTC_8fc30.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_8fc30.vcxproj -> E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-872nmo\\Debug\\cmTC_8fc30.exe
+        FinalizeBuildStatus:
+          正在删除文件“cmTC_8fc30.dir\\Debug\\cmTC_8fc30.tlog\\unsuccessfulbuild”。
+          正在对“cmTC_8fc30.dir\\Debug\\cmTC_8fc30.tlog\\cmTC_8fc30.lastbuildstate”执行 Touch 任务。
+        已完成生成项目“E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-872nmo\\cmTC_8fc30.vcxproj”(默认目标)的操作。
+        
+        已成功生成。
+            0 个警告
+            0 个错误
+        
+        已用时间 00:00:00.52
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "D:/CMake/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "CMakeLists.txt:70 (check_type_size)"
+    checks:
+      - "Check size of off64_t"
+    directories:
+      source: "E:/mysql-connector-cpp_VS2019/build/cdk/protocol/mysqlx/zlib/CMakeFiles/CMakeScratch/TryCompile-hntj01"
+      binary: "E:/mysql-connector-cpp_VS2019/build/cdk/protocol/mysqlx/zlib/CMakeFiles/CMakeScratch/TryCompile-hntj01"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_MODULE_PATH: "E:/mysql-connector-cpp_VS2019/cdk/cmake"
+      CMAKE_WARN_DEPRECATED: "FALSE"
+    buildResult:
+      variable: "HAVE_OFF64_T"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/mysql-connector-cpp_VS2019/build/cdk/protocol/mysqlx/zlib/CMakeFiles/CMakeScratch/TryCompile-hntj01'
+        
+        Run Build Command(s): "d:/Microsoft Visual Studio 16.0/MSBuild/Current/Bin/MSBuild.exe" cmTC_253d1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.11.2+f32259642
+        版权所有(C) Microsoft Corporation。保留所有权利。
+        
+        生成启动时间为 2024/8/15 18:29:15。
+        节点 1 上的项目“E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-hntj01\\cmTC_253d1.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_253d1.dir\\Debug\\”。
+          正在创建目录“E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-hntj01\\Debug\\”。
+          正在创建目录“cmTC_253d1.dir\\Debug\\cmTC_253d1.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_253d1.dir\\Debug\\cmTC_253d1.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+        ClCompile:
+          d:\\Microsoft Visual Studio 16.0\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _LARGEFILE64_SOURCE=1 /D HAVE_SYS_TYPES_H /D HAVE_STDINT_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_253d1.dir\\Debug\\\\" /Fd"cmTC_253d1.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-hntj01\\OFF64_T.c"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.29.30154 版
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          OFF64_T.c
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _LARGEFILE64_SOURCE=1 /D HAVE_SYS_TYPES_H /D HAVE_STDINT_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_253d1.dir\\Debug\\\\" /Fd"cmTC_253d1.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-hntj01\\OFF64_T.c"
+        E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-hntj01\\OFF64_T.c(29,12): error C2065: “off64_t”: 未声明的标识符 [E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-hntj01\\cmTC_253d1.vcxproj]
+        E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-hntj01\\OFF64_T.c(30,12): error C2065: “off64_t”: 未声明的标识符 [E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-hntj01\\cmTC_253d1.vcxproj]
+        E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-hntj01\\OFF64_T.c(31,12): error C2065: “off64_t”: 未声明的标识符 [E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-hntj01\\cmTC_253d1.vcxproj]
+        E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-hntj01\\OFF64_T.c(32,12): error C2065: “off64_t”: 未声明的标识符 [E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-hntj01\\cmTC_253d1.vcxproj]
+        E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-hntj01\\OFF64_T.c(33,12): error C2065: “off64_t”: 未声明的标识符 [E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-hntj01\\cmTC_253d1.vcxproj]
+        已完成生成项目“E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-hntj01\\cmTC_253d1.vcxproj”(默认目标)的操作 - 失败。
+        
+        生成失败。
+        
+        “E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-hntj01\\cmTC_253d1.vcxproj”(默认目标) (1) ->
+        (ClCompile 目标) -> 
+          E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-hntj01\\OFF64_T.c(29,12): error C2065: “off64_t”: 未声明的标识符 [E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-hntj01\\cmTC_253d1.vcxproj]
+          E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-hntj01\\OFF64_T.c(30,12): error C2065: “off64_t”: 未声明的标识符 [E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-hntj01\\cmTC_253d1.vcxproj]
+          E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-hntj01\\OFF64_T.c(31,12): error C2065: “off64_t”: 未声明的标识符 [E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-hntj01\\cmTC_253d1.vcxproj]
+          E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-hntj01\\OFF64_T.c(32,12): error C2065: “off64_t”: 未声明的标识符 [E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-hntj01\\cmTC_253d1.vcxproj]
+          E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-hntj01\\OFF64_T.c(33,12): error C2065: “off64_t”: 未声明的标识符 [E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-hntj01\\cmTC_253d1.vcxproj]
+        
+            0 个警告
+            5 个错误
+        
+        已用时间 00:00:00.34
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:79 (check_function_exists)"
+    checks:
+      - "Looking for fseeko"
+    directories:
+      source: "E:/mysql-connector-cpp_VS2019/build/cdk/protocol/mysqlx/zlib/CMakeFiles/CMakeScratch/TryCompile-7v7rvn"
+      binary: "E:/mysql-connector-cpp_VS2019/build/cdk/protocol/mysqlx/zlib/CMakeFiles/CMakeScratch/TryCompile-7v7rvn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_MODULE_PATH: "E:/mysql-connector-cpp_VS2019/cdk/cmake"
+      CMAKE_WARN_DEPRECATED: "FALSE"
+    buildResult:
+      variable: "HAVE_FSEEKO"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/mysql-connector-cpp_VS2019/build/cdk/protocol/mysqlx/zlib/CMakeFiles/CMakeScratch/TryCompile-7v7rvn'
+        
+        Run Build Command(s): "d:/Microsoft Visual Studio 16.0/MSBuild/Current/Bin/MSBuild.exe" cmTC_aafa3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.11.2+f32259642
+        版权所有(C) Microsoft Corporation。保留所有权利。
+        
+        生成启动时间为 2024/8/15 18:29:16。
+        节点 1 上的项目“E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-7v7rvn\\cmTC_aafa3.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_aafa3.dir\\Debug\\”。
+          正在创建目录“E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-7v7rvn\\Debug\\”。
+          正在创建目录“cmTC_aafa3.dir\\Debug\\cmTC_aafa3.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_aafa3.dir\\Debug\\cmTC_aafa3.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+        ClCompile:
+          d:\\Microsoft Visual Studio 16.0\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_aafa3.dir\\Debug\\\\" /Fd"cmTC_aafa3.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-7v7rvn\\CheckFunctionExists.c"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.29.30154 版
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          CheckFunctionExists.c
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_aafa3.dir\\Debug\\\\" /Fd"cmTC_aafa3.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-7v7rvn\\CheckFunctionExists.c"
+        Link:
+          d:\\Microsoft Visual Studio 16.0\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-7v7rvn\\Debug\\cmTC_aafa3.exe" /INCREMENTAL /ILK:"cmTC_aafa3.dir\\Debug\\cmTC_aafa3.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/mysql-connector-cpp_VS2019/build/cdk/protocol/mysqlx/zlib/CMakeFiles/CMakeScratch/TryCompile-7v7rvn/Debug/cmTC_aafa3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/mysql-connector-cpp_VS2019/build/cdk/protocol/mysqlx/zlib/CMakeFiles/CMakeScratch/TryCompile-7v7rvn/Debug/cmTC_aafa3.lib" /MACHINE:X64  /machine:x64 cmTC_aafa3.dir\\Debug\\CheckFunctionExists.obj
+        CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 fseeko，函数 main 中引用了该符号 [E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-7v7rvn\\cmTC_aafa3.vcxproj]
+        E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-7v7rvn\\Debug\\cmTC_aafa3.exe : fatal error LNK1120: 1 个无法解析的外部命令 [E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-7v7rvn\\cmTC_aafa3.vcxproj]
+        已完成生成项目“E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-7v7rvn\\cmTC_aafa3.vcxproj”(默认目标)的操作 - 失败。
+        
+        生成失败。
+        
+        “E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-7v7rvn\\cmTC_aafa3.vcxproj”(默认目标) (1) ->
+        (Link 目标) -> 
+          CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 fseeko，函数 main 中引用了该符号 [E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-7v7rvn\\cmTC_aafa3.vcxproj]
+          E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-7v7rvn\\Debug\\cmTC_aafa3.exe : fatal error LNK1120: 1 个无法解析的外部命令 [E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-7v7rvn\\cmTC_aafa3.vcxproj]
+        
+            0 个警告
+            2 个错误
+        
+        已用时间 00:00:00.50
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:87 (check_include_file)"
+    checks:
+      - "Looking for unistd.h"
+    directories:
+      source: "E:/mysql-connector-cpp_VS2019/build/cdk/protocol/mysqlx/zlib/CMakeFiles/CMakeScratch/TryCompile-kffm0l"
+      binary: "E:/mysql-connector-cpp_VS2019/build/cdk/protocol/mysqlx/zlib/CMakeFiles/CMakeScratch/TryCompile-kffm0l"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_MODULE_PATH: "E:/mysql-connector-cpp_VS2019/cdk/cmake"
+      CMAKE_WARN_DEPRECATED: "FALSE"
+    buildResult:
+      variable: "Z_HAVE_UNISTD_H"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/mysql-connector-cpp_VS2019/build/cdk/protocol/mysqlx/zlib/CMakeFiles/CMakeScratch/TryCompile-kffm0l'
+        
+        Run Build Command(s): "d:/Microsoft Visual Studio 16.0/MSBuild/Current/Bin/MSBuild.exe" cmTC_6db36.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.11.2+f32259642
+        版权所有(C) Microsoft Corporation。保留所有权利。
+        
+        生成启动时间为 2024/8/15 18:29:17。
+        节点 1 上的项目“E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-kffm0l\\cmTC_6db36.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_6db36.dir\\Debug\\”。
+          正在创建目录“E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-kffm0l\\Debug\\”。
+          正在创建目录“cmTC_6db36.dir\\Debug\\cmTC_6db36.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_6db36.dir\\Debug\\cmTC_6db36.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+        ClCompile:
+          d:\\Microsoft Visual Studio 16.0\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6db36.dir\\Debug\\\\" /Fd"cmTC_6db36.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-kffm0l\\CheckIncludeFile.c"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.29.30154 版
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          CheckIncludeFile.c
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6db36.dir\\Debug\\\\" /Fd"cmTC_6db36.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-kffm0l\\CheckIncludeFile.c"
+        E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-kffm0l\\CheckIncludeFile.c(1,10): fatal error C1083: 无法打开包括文件: “unistd.h”: No such file or directory [E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-kffm0l\\cmTC_6db36.vcxproj]
+        已完成生成项目“E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-kffm0l\\cmTC_6db36.vcxproj”(默认目标)的操作 - 失败。
+        
+        生成失败。
+        
+        “E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-kffm0l\\cmTC_6db36.vcxproj”(默认目标) (1) ->
+        (ClCompile 目标) -> 
+          E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-kffm0l\\CheckIncludeFile.c(1,10): fatal error C1083: 无法打开包括文件: “unistd.h”: No such file or directory [E:\\mysql-connector-cpp_VS2019\\build\\cdk\\protocol\\mysqlx\\zlib\\CMakeFiles\\CMakeScratch\\TryCompile-kffm0l\\cmTC_6db36.vcxproj]
+        
+            0 个警告
+            1 个错误
+        
+        已用时间 00:00:00.35
+        
+      exitCode: 1
+...
