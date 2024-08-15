@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\mysql-connector-cpp_VS2019\build\platform-cache\CMakeFiles\9cfbcf0b288250afbb1a492b721c9eed\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{021F2F56-B3A5-3863-A94F-6CB34897AB95}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
