@@ -202,8 +202,7 @@ void TestsListener::testHasFinished(TestRunResult result, const String & msg)
     tmp << std::setw(13) << std::right << total << "s";
     tmp << " (100.00%)" << std::endl;
 
-    const String & fullName=testFullName();
-    const List & names=Timer::getNames(fullName);
+    const List & names=Timer::getNames(testFullName());
     ConstIterator it=names.begin();
     for (; it != names.end(); ++it)
     {

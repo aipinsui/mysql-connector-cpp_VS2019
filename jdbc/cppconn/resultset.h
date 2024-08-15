@@ -38,7 +38,6 @@
 #include <list>
 #include <map>
 #include <iostream>
-#include <vector>
 #include "sqlstring.h"
 #include "resultset_metadata.h"
 
@@ -182,9 +181,6 @@ public:
   virtual size_t rowsCount() const = 0;
 
   virtual bool wasNull() const = 0;
-
-  virtual std::vector<float> getVector(uint32_t columnIndex) const = 0;
-  virtual std::vector<float> getVector(const sql::SQLString &columnLabel) const = 0;
 };
 
 } /* namespace sql */

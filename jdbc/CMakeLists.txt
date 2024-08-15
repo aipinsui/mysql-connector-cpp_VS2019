@@ -227,19 +227,6 @@ endif()
 
 ############################################################################
 #
-#  Check support for vector type in mysql.
-#
-TRY_COMPILE(COMPILE_RESULT ${CMAKE_BINARY_DIR} ${CMAKE_CURRENT_LIST_DIR}/cmake/type_vector.c
-CMAKE_FLAGS "-DINCLUDE_DIRECTORIES='${MYSQL_INCLUDE_DIR}'")
-MESSAGE(STATUS "Checking if MySQL client lib supports vector type - ${COMPILE_RESULT}")
-
-IF(COMPILE_RESULT)
-    ADD_DEFINITIONS(-DHAVE_TYPE_VECTOR)
-ENDIF(COMPILE_RESULT)
-
-
-############################################################################
-#
 #  Main components and connector library target.
 #
 
@@ -349,9 +336,9 @@ install(TARGETS connector-jdbc
 
 install(TARGETS connector-jdbc
   CONFIGURATIONS Debug
-  ARCHIVE DESTINATION "${INSTALL_LIB_DIR_STATIC_DEBUG}" COMPONENT JDBCDev
-  RUNTIME DESTINATION "${INSTALL_LIB_DIR_DEBUG}" COMPONENT JDBCDll
-  LIBRARY DESTINATION "${INSTALL_LIB_DIR_DEBUG}" COMPONENT JDBCDll
+  ARCHIVE DESTINATION "${INSTALL_LIB_DIR_STATIC}/debug" COMPONENT JDBCDev
+  RUNTIME DESTINATION "${INSTALL_LIB_DIR}/debug" COMPONENT JDBCDll
+  LIBRARY DESTINATION "${INSTALL_LIB_DIR}/debug" COMPONENT JDBCDll
 )
 
 
@@ -365,7 +352,7 @@ if(MSVC AND NOT BUILD_STATIC)
 
   install(FILES $<TARGET_PDB_FILE:connector-jdbc>
     CONFIGURATIONS Debug
-    DESTINATION "${INSTALL_LIB_DIR_DEBUG}"
+    DESTINATION "${INSTALL_LIB_DIR}/debug"
     COMPONENT Debuginfo
   )
 
@@ -507,12 +494,18 @@ set(IGNORED_LIBS
   rest_api rest_connection_pool rest_metadata_cache rest_router rest_routing
   harness-library  mysqlharness_stdx mysqlharness_tls
   router_openssl router_protobuf routing
+  mysqlrouter_mysqlxmessages
+  mysqlrouter_connection_pool
+  mysqlrouter_http
+  mysqlrouter_http_auth_backend
+  mysqlrouter_http_auth_realm
+  mysqlrouter_io_component
+  mysqlrouter_lib
+  mysqlrouter_metadata_cache
+  mysqlrouter_routing
   # New DLLs added in .33
   destination_status
-  # Ignore all mysqlrouter_* DLLs
-  mysqlrouter_
-  # New DLLs added in 9.0.0
-  mysqlharness
+  mysqlrouter_destination_status
 )
 
 

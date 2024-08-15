@@ -267,17 +267,16 @@ TEST_F(Sess, tls_ciphers_prio)
 TEST_F(Sess, tls_ver_ciphers)
 {
   SKIP_IF_NO_XPLUGIN;
+  //USE_NATIVE_PWD;
   SKIP_IF_SERVER_VERSION_LESS(8, 0, 14)
 
-  std::set<std::string> versions = {"TLSv1.2", "TLSv1.3"};
+  std::set<std::string> versions = {"TLSv1.1" ,"TLSv1.2"};
 
   // TOOD: Instead, working ciphers should be selected from the current cipher list(s).
 
   std::map<std::string, std::string> suites_map = {
-    // mandatory 1.2 cipher
-    { "ECDHE-RSA-AES128-GCM-SHA256", "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256"},
-    // approved 1.3 cipher
-    { "TLS_AES_128_GCM_SHA256", "TLS_AES_128_GCM_SHA256" }
+    { "DHE-RSA-AES128-GCM-SHA256", "TLS_DHE_RSA_WITH_AES_128_GCM_SHA256"},
+    { "DES-CBC3-SHA", "TLS_RSA_WITH_3DES_EDE_CBC_SHA" }
   };
 
   std::string versions_str;
@@ -331,8 +330,7 @@ TEST_F(Sess, tls_ver_ciphers)
         get_uri() + "/?tls-versions=[TLSv1.1,TLSv1.2]"
         "&tls-ciphersuites=["
           "foo,TLS_DHE_RSA_WITH_DES_CBC_SHA,"
-          + suites_map.begin()->second +
-          ",TLS_RSA_WITH_3DES_EDE_CBC_SHA"
+          "TLS_DHE_RSA_WITH_AES_128_GCM_SHA256,TLS_RSA_WITH_3DES_EDE_CBC_SHA"
         "]"
       );
     );
@@ -430,7 +428,7 @@ TEST_F(Sess, tls_ver_ciphers)
         SessionOption::TLS_CIPHERSUITES,
         std::list<string>{
         "foo", "TLS_DHE_RSA_WITH_DES_CBC_SHA",
-          suites_map.begin()->second,
+          "TLS_DHE_RSA_WITH_AES_128_GCM_SHA256",
           "TLS_RSA_WITH_3DES_EDE_CBC_SHA"
         }
       );
@@ -440,8 +438,8 @@ TEST_F(Sess, tls_ver_ciphers)
       opt.erase(SessionOption::TLS_CIPHERSUITES);
       opt.set(
         SessionOption::TLS_CIPHERSUITES,
-        "foo, TLS_DHE_RSA_WITH_DES_CBC_SHA,"
-        + suites_map.begin()->second +
+        "foo, TLS_DHE_RSA_WITH_DES_CBC_SHA"
+        ",TLS_DHE_RSA_WITH_AES_128_GCM_SHA256"
         ",TLS_RSA_WITH_3DES_EDE_CBC_SHA"
       );
 
@@ -973,7 +971,7 @@ TEST_F(Sess, auth_method)
 {
   SKIP_IF_NO_XPLUGIN;
 
-  test::Test_user u{*this};
+  USE_NATIVE_PWD;
 
   auto check_user = [](mysqlx::Session &sess)
   {
@@ -995,7 +993,7 @@ TEST_F(Sess, auth_method)
     SessionSettings opts = common_opts;
     opts.set(
       SessionOption::SSL_MODE, SSLMode::DISABLED,
-      SessionOption::AUTH, AuthMethod::SHA256_MEMORY
+      SessionOption::AUTH, AuthMethod::MYSQL41
     );
     mysqlx::Session sess(opts);
     check_user(sess);
@@ -1016,7 +1014,7 @@ TEST_F(Sess, auth_method)
     SessionSettings opts = common_opts;
     opts.set(
       SessionOption::PWD, "notworkingpassword",
-      SessionOption::AUTH, AuthMethod::SHA256_MEMORY
+      SessionOption::AUTH, AuthMethod::MYSQL41
     );
     EXPECT_THROW(mysqlx::Session sess(opts), Error);
   }
@@ -1035,7 +1033,7 @@ TEST_F(Sess, auth_method)
     SessionSettings opts = common_opts;
     opts.set(
       SessionOption::SSL_MODE, SSLMode::REQUIRED,
-      SessionOption::AUTH, AuthMethod::SHA256_MEMORY
+      SessionOption::AUTH, AuthMethod::MYSQL41
     );
     mysqlx::Session sess(opts);
     check_user(sess);
@@ -1047,7 +1045,7 @@ TEST_F(Sess, auth_method)
 
   {
     std::stringstream str;
-    str << uri.str() << "/?ssl-mode=disabled&auth=sha256_memory";
+    str << uri.str() << "/?ssl-mode=disabled&auth=mysql41";
     mysqlx::Session sess(str.str());
     check_user(sess);
   }
@@ -1067,7 +1065,7 @@ TEST_F(Sess, auth_method)
 
   {
     std::stringstream str;
-    str << uri.str() << "/?ssl-mode=required&auth=sha256_memory";
+    str << uri.str() << "/?ssl-mode=required&auth=mysql41";
     mysqlx::Session sess(str.str());
     check_user(sess);
   }
@@ -1086,7 +1084,7 @@ TEST_F(Sess, auth_external)
     SessionOption::USER, get_user(),
     SessionOption::PWD, get_password() ? get_password() : nullptr,
     SessionOption::SSL_MODE, SSLMode::DISABLED,
-    SessionOption::AUTH, AuthMethod::EXTERNAL
+    SessionOption::AUTH, AuthMethod::PLAIN
   ), Error);
 
   std::stringstream uri;
@@ -1116,13 +1114,13 @@ TEST_F(Sess, ssl_session)
 
   SKIP_IF_NO_XPLUGIN;
 
-  test::Test_user u{*this};
+  USE_NATIVE_PWD;
 
   SessionSettings common_opts(
     SessionOption::HOST, get_host(),
     SessionOption::PORT, get_port(),
-    SessionOption::USER, u.name(),
-    SessionOption::PWD, nullptr
+    SessionOption::USER, get_user(),
+    SessionOption::PWD, get_password() ? get_password() : nullptr
   );
 
   {
@@ -1330,8 +1328,8 @@ TEST_F(Sess, ssl_session)
 TEST_F(Sess, ipv6)
 {
   SKIP_IF_NO_XPLUGIN;
+  USE_NATIVE_PWD;
 
-  test::Test_user u{*this};
   std::string host = get_host();
 
   if (host != "localhost" && host != "127.0.0.1")
@@ -1340,15 +1338,27 @@ TEST_F(Sess, ipv6)
     return;
   }
 
-  // Using URI
-  // Note: no-SSL session must be created after SSL one
+  {
+    mysqlx::Session sess(SessionOption::HOST, "::1",
+                          SessionOption::PORT, get_port(),
+                          SessionOption::USER, get_user(),
+                          SessionOption::PWD, get_password() ? get_password() : nullptr,
+                          SessionOption::SSL_MODE, SSLMode::DISABLED
+                          );
+  }
+
+  //Using URI
 
   std::stringstream uri;
 
-  uri << "mysqlx://" << u.name();
+  uri << "mysqlx://" << get_user();
+
+  if (get_password() && *get_password())
+    uri << ":"<< get_password();
+
   uri << "@" << "[::1]:" << get_port();
 
-  LOG() << "Create session with uri: " << uri.str();
+  //URI without ssl_mode
   {
     mysqlx::Session sess(uri.str());
 
@@ -1362,9 +1372,8 @@ TEST_F(Sess, ipv6)
     EXPECT_FALSE(cipher.empty());
   }
 
+  //Disable SSL_MODE
   uri << "/?Ssl-Mode=DisabLED";
-
-  LOG() << "Create session with uri: " << uri.str();
   {
     mysqlx::Session sess(uri.str());
 
@@ -1376,16 +1385,6 @@ TEST_F(Sess, ipv6)
     string cipher = row[1];
 
     EXPECT_TRUE(cipher.empty());
-  }
-
-  LOG() << "Create session using options";
-  {
-    mysqlx::Session sess(SessionOption::HOST, "::1",
-                          SessionOption::PORT, get_port(),
-                          SessionOption::USER, u.name(),
-                          SessionOption::PWD, nullptr,
-                          SessionOption::SSL_MODE, SSLMode::DISABLED
-                          );
   }
 }
 

@@ -222,12 +222,6 @@ private:
 
   // For internal use
   sql::ResultSet *_getResultSet();
-
-public:
-
- void setVector(unsigned int parameterIndex,
-                const std::vector<float> &vec) override;
-
 };
 
 } /* namespace mysql */

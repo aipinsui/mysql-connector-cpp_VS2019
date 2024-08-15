@@ -203,9 +203,6 @@ public:
  void setFetchSize(size_t rows);
 
  bool wasNull() const;
-
- std::vector<float> getVector(uint32_t columnIndex) const;
- std::vector<float> getVector(const sql::SQLString &columnLabel) const;
 };
 
 } /* namespace mysql*/

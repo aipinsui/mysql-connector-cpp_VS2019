@@ -35,7 +35,6 @@
 #include <string.h>
 #include <iostream>
 #include <sstream>
-#include <assert.h>
 
 #include <cppconn/exception.h>
 #include "mysql_util.h"
@@ -127,14 +126,6 @@ MySQL_PreparedResultSetMetaData::getColumnDisplaySize(unsigned int columnIndex)
     throw SQLException(msg.str());
   }
   int ret = field->length / cs->char_maxlen;
-
-#ifdef HAVE_TYPE_VECTOR
-  /* Display size calculation for sizeof(float) != 4 is difficult */
-  assert(4 == sizeof(float));
-  if (field->type == MYSQL_TYPE_VECTOR)
-    ret = (field->length / sizeof(float)) * 15 + 1;
-#endif
-
   CPP_INFO_FMT("column=%u display_size=%d", columnIndex, ret);
   return ret;
 }
@@ -265,14 +256,7 @@ MySQL_PreparedResultSetMetaData::getScale(unsigned int columnIndex)
   CPP_ENTER("MySQL_PreparedResultSetMetaData::getScale");
   CPP_INFO_FMT("this=%p", this);
   checkColumnIndex(columnIndex);
-  auto meta = getFieldMeta(columnIndex);
-  unsigned int ret = meta->decimals;
-#ifdef HAVE_TYPE_VECTOR
-  // TODO: For some reason decimals is not zero for VECTOR.
-  //       Need to investigate later.
-  if (meta->type == MYSQL_TYPE_VECTOR)
-    ret = 0;
-#endif
+  unsigned int ret = getFieldMeta(columnIndex)->decimals;
   CPP_INFO_FMT("column=%u scale=%d", columnIndex, ret);
   return ret;
 }
