@@ -1,0 +1,15 @@
+# CMake generation dependency list for this directory.
+D:/CMake/share/cmake-3.30/Modules/ProcessorCount.cmake
+E:/mysql-connector-cpp_VS2019/build/jdbc/VersionInfo.cmake
+E:/mysql-connector-cpp_VS2019/build/jdbc/getmysqlversion.c
+E:/mysql-connector-cpp_VS2019/cdk/cmake/config_options.cmake
+E:/mysql-connector-cpp_VS2019/cdk/cmake/dependency.cmake
+E:/mysql-connector-cpp_VS2019/cdk/cmake/platform.cmake
+E:/mysql-connector-cpp_VS2019/cmake/libutils.cmake
+E:/mysql-connector-cpp_VS2019/cmake/setup.cmake
+E:/mysql-connector-cpp_VS2019/jdbc/CMakeLists.txt
+E:/mysql-connector-cpp_VS2019/jdbc/VersionInfo.cmake.in
+E:/mysql-connector-cpp_VS2019/jdbc/cmake/DepFindMySQL.cmake
+E:/mysql-connector-cpp_VS2019/jdbc/cmake/setup.cmake
+E:/mysql-connector-cpp_VS2019/jdbc/cmake/type_vector.c
+E:/mysql-connector-cpp_VS2019/jdbc/install_layout.cmake

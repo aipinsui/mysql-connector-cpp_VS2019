@@ -1,0 +1,9 @@
+# CMake generation dependency list for this directory.
+D:/CMake/share/cmake-3.30/Modules/CheckFunctionExists.cmake
+D:/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake
+D:/CMake/share/cmake-3.30/Modules/CheckIncludeFileCXX.cmake
+D:/CMake/share/cmake-3.30/Modules/CheckIncludeFiles.cmake
+D:/CMake/share/cmake-3.30/Modules/CheckTypeSize.cmake
+E:/mysql-connector-cpp_VS2019/jdbc/cppconn/CMakeLists.txt
+E:/mysql-connector-cpp_VS2019/jdbc/cppconn/config.h.cm
+E:/mysql-connector-cpp_VS2019/jdbc/cppconn/version_info.h.cmake

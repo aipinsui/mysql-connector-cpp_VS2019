@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+E:/mysql-connector-cpp_VS2019/jdbc/driver/CMakeLists.txt
+E:/mysql-connector-cpp_VS2019/jdbc/driver/nativeapi/binding_config.h.cm
+E:/mysql-connector-cpp_VS2019/jdbc/driver/version_info.h.cmake
